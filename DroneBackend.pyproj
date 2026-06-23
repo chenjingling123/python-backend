@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ee5d7b11-341e-4343-8634-508b40194eed}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>src\main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <PythonWsgiHandler>{StartupModule}.wsgi_app</PythonWsgiHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\apps\sys_dictionary.py" />
+    <Compile Include="src\apps\label_class.py" />
+    <Compile Include="src\apps\label_info.py" />
+    <Compile Include="src\apps\inference_info.py" />
+    <Compile Include="src\apps\auto_label.py" />
+    <Compile Include="src\apps\model_deployed.py" />
+    <Compile Include="src\apps\inspection_task.py" />
+    <Compile Include="src\apps\schemas\auto_label_model.py" />
+    <Compile Include="src\apps\schemas\sys_dictionary.py" />
+    <Compile Include="src\apps\schemas\label_class.py" />
+    <Compile Include="src\apps\schemas\model_deployed.py" />
+    <Compile Include="src\apps\schemas\inspection_task.py" />
+    <Compile Include="src\apps\train_info.py" />
+    <Compile Include="src\apps\schemas\label_info.py" />
+    <Compile Include="src\apps\schemas\inference_info.py" />
+    <Compile Include="src\apps\schemas\train_info.py" />
+    <Compile Include="src\apps\schemas\train_model.py" />
+    <Compile Include="src\apps\schemas\model_info.py" />
+    <Compile Include="src\apps\train.py" />
+    <Compile Include="src\apps\schemas\common.py" />
+    <Compile Include="src\apps\schemas\inference_model.py" />
+    <Compile Include="src\apps\schemas\warning_act.py" />
+    <Compile Include="src\apps\schemas\__init__.py" />
+    <Compile Include="src\apps\inference.py" />
+    <Compile Include="src\apps\model_info.py" />
+    <Compile Include="src\apps\warning_act.py" />
+    <Compile Include="src\apps\__init__.py" />
+    <Compile Include="src\config\config.py" />
+    <Compile Include="src\config\logging.py" />
+    <Compile Include="src\config\__init__.py" />
+    <Compile Include="src\db\models.py" />
+    <Compile Include="src\db\services\sys_dictionary_services.py" />
+    <Compile Include="src\db\services\label_class_services.py" />
+    <Compile Include="src\db\services\label_info_services.py" />
+    <Compile Include="src\db\services\inference_info_services.py" />
+    <Compile Include="src\db\services\model_deployed_services.py" />
+    <Compile Include="src\db\services\inspection_task_services.py" />
+    <Compile Include="src\db\services\train_info_services.py" />
+    <Compile Include="src\db\services\model_info_services.py" />
+    <Compile Include="src\db\services\warning_act_services.py" />
+    <Compile Include="src\db\services\__init__.py" />
+    <Compile Include="src\db\__init__.py" />
+    <Compile Include="src\main.py" />
+    <Compile Include="src\ml_models\services\auto_label_service.py" />
+    <Compile Include="src\ml_models\services\inference_service.py" />
+    <Compile Include="src\ml_models\services\train_service.py" />
+    <Compile Include="src\ml_models\services\__init__.py" />
+    <Compile Include="src\ml_models\__init__.py" />
+    <Compile Include="src\tools\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src" />
+    <Folder Include="src\apps" />
+    <Folder Include="src\apps\schemas" />
+    <Folder Include="src\config" />
+    <Folder Include="src\db" />
+    <Folder Include="src\db\services" />
+    <Folder Include="src\ml_models" />
+    <Folder Include="src\ml_models\services" />
+    <Folder Include="src\tools" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="venv\">
+      <Id>venv</Id>
+      <Description>venv (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <Version>3.9</Version>
+      <Architecture>X64</Architecture>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

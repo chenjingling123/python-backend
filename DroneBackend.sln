@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DroneBackend", "DroneBackend.pyproj", "{EE5D7B11-341E-4343-8634-508B40194EED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE5D7B11-341E-4343-8634-508B40194EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5D7B11-341E-4343-8634-508B40194EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5D7B11-341E-4343-8634-508B40194EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5D7B11-341E-4343-8634-508B40194EED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {376DB751-8B74-4B60-883F-9286E36E8C85}
+	EndGlobalSection
+EndGlobal
